@@ -28,25 +28,14 @@ const config = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css' }
-    ],
-    //   css: [
-    //
-    //   '/css/style.css'
-    // ],
+    ]
   },
 
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#2199e8' },
-  //
-  // render: {
-  //   bundleRenderer: {
-  //     shouldPreload: (file, type) => {
-  //       return [ 'style'].includes(type)
-  //     }
-  //   }
-  // },
+
   /*
   ** Build configuration
   */
