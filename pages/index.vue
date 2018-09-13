@@ -95,7 +95,14 @@ export default {
   background: #000;
   color: #fff;
 }
+@media (max-width:900px){
 
+.home.header {
+
+    height: 100vw;
+    min-height:700px;
+  }
+}
 .home .person-name:link,
 .home .person-name:visited {
   color: #fff;
