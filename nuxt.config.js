@@ -86,28 +86,14 @@ const config = {
         }),
         // get the blog post content type
         cmaClient.getSpace(ctfConfig.CTF_SPACE_ID)
-          .then(space => space.getContentType(ctfConfig.CTF_BLOG_POST_TYPE_ID)),
-          // get all generic pages
-        cdaClient.getPageEntries({
-          'content_type': ctfConfig.CTF_GENERIC_PAGE_TYPE_ID
-          }),
-          // get the generic pages content type
-          cmaClient.getPageSpace(ctfConfig.CTF_SPACE_ID)
-            .then(space => space.getContentType(ctfConfig.CTF_GENERIC_PAGE_TYPE_ID))
-
+          .then(space => space.getContentType(ctfConfig.CTF_BLOG_POST_TYPE_ID))
       ])
       .then(([entries, postType]) => {
         return [
           // map entries to URLs
           ...entries.items.map(entry => `/blog/${entry.fields.slug}`),
           // map all possible tags to URLs
-          ...postType.fields.find(field => field.id === 'tags').items.validations[0].in.map(tag => `/tags/${tag}`),
-
-          // map entries to URLs
-          ...entries.items.map(entry => `/about/${entry.fields.slug}`)
-
-
-
+          ...postType.fields.find(field => field.id === 'tags').items.validations[0].in.map(tag => `/tags/${tag}`)
         ]
       })
     }
@@ -121,8 +107,7 @@ const config = {
     CTF_SPACE_ID: ctfConfig.CTF_SPACE_ID,
     CTF_CDA_ACCESS_TOKEN: ctfConfig.CTF_CDA_ACCESS_TOKEN,
     CTF_PERSON_ID: ctfConfig.CTF_PERSON_ID,
-    CTF_BLOG_POST_TYPE_ID: ctfConfig.CTF_BLOG_POST_TYPE_ID,
-    CTF_GENERIC_PAGE_TYPE_ID: ctfConfig.CTF_GENERIC_PAGE_TYPE_ID
+    CTF_BLOG_POST_TYPE_ID: ctfConfig.CTF_BLOG_POST_TYPE_ID
   }
 }
 
