@@ -97,7 +97,7 @@ export default {
 }
 @media (max-width:900px){
 
-  .home.header { min-height:700px;height:100vw}
+  .home.header { min-height:700px;height:100vw;}
 
 
 }
