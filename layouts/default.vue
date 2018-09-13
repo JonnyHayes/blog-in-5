@@ -79,7 +79,7 @@
   }
 
   .item {
-    padding: 1em 3em 1em 0;
+    padding: 1em 1em 1em 0;
   }
 
   @media all and (min-width: 600px) {
