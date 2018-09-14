@@ -8,8 +8,8 @@
         </div>
         <!-- <div class="page-info wrapper">
           <h2>Blog</h2>
-        </div>
-      </div> -->
+        </div> -->
+      </div>
     </header>
 
     <section class="body-container">
