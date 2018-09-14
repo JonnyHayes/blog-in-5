@@ -103,6 +103,16 @@ export default {
     min-height:700px;
   }
 }
+
+@media (max-width:320px){
+
+.home.header {
+
+    height: 100vw;
+    min-height:775px;
+  }
+}
+
 .home .person-name:link,
 .home .person-name:visited {
   color: #fff;
