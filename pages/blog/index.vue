@@ -3,13 +3,13 @@
     <header class="blog header">
       <div class="foreground">
         <div class="page-bar wrapper">
-          <a href="/" class="person-name">This is the Blog section</a>
+          <a href="/" class="person-name">Jonathan Hayes</a>
           <Navigation></Navigation>
         </div>
-        <div class="page-info wrapper">
+        <!-- <div class="page-info wrapper">
           <h2>Blog</h2>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <section class="body-container">
