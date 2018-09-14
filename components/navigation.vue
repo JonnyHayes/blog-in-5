@@ -1,9 +1,10 @@
 <template>
   <nav role="navigation" class="top-nav">
     <ul class="menu">
-      <li v-if="!/\/.*?\/.*/.test(route.path)" v-for="route in this.$router.options.routes">
+      <!-- <li v-if="!/\/.*?\/.*/.test(route.path)" v-for="route in this.$router.options.routes">
         <nuxt-link :to="{ name: route.name }">{{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}</nuxt-link>
-      </li>
+      </li> -->
+      <li><a href="/" class="nuxt-link-exact-active nuxt-link-active">Home</a></li>
     </ul>
   </nav>
 </template>
