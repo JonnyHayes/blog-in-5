@@ -4,7 +4,7 @@
       <!-- <div class="picture">
         <img :src="person.fields.image.fields.file.url + '?w=1200'">
       </div> -->
-      <div class="foreground">
+      <div class="foreground"> 
         <div class="page-bar wrapper">
           <a href="/" class="person-name">{{ person.fields.name }}</a>
           <Navigation></Navigation>
