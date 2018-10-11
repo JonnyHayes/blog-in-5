@@ -24,7 +24,7 @@
     </section>
   </div>
 </template>
-
+ 
 <script>
 import {createClient} from '~/plugins/contentful.js'
 import Navigation from '~/components/navigation.vue'
