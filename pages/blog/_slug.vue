@@ -67,9 +67,15 @@ export default {
 .headline {
   padding: 3em 0 0;
 }
-
 .headline h1 {
-  font-size: 3.5em;
+
+    font-size: 3.5em;
+
+}
+  @media (max-width:768px) {
+.headline h1 {
+    font-size: 2em;
+}
 }
 
 .copy {
